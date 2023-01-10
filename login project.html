@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>ELETRICITY BILL</title>
+<style>
+body
+{
+font-family: "Lucida Console", "Courier New", monospace;
+color: black;
+background-size:cover;
+background-image: url('animesh.jpg');
+width:1800;
+}
+h3
+{
+color:black;
+font-family: "Lucida Console", "Courier New", monospace;
+text-decoration: underline;
+}
+input[type=text],[type=password],[type=mail]
+{
+ background-color: lightgrey;
+border-radius:20px;
+padding:5px;
+color:black;
+  }
+input[type=submit]:hover
+{
+
+background-color:teal;
+}
+input[type=reset]:hover
+{
+background-color:red;
+}
+input[type=submit],[type=checkbox],[type=reset]
+{
+cursor:pointer;
+}
+ul 
+{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  border:solid;
+
+}
+
+li 
+{
+float: left;
+padding:8px;
+}
+li a 
+{
+  display: block;
+  color: red;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: underline;
+}
+li a:hover 
+{
+  background-color: white;
+}
+.accordion 
+{
+   cursor: pointer;
+  padding: 18px;
+  width:100%;
+  text-align: left;
+  border: double;
+}
+ .accordion:hover 
+{
+  background-color:gray;
+}
+.panel 
+{
+  padding: 18px;
+  display: none;
+background-color:#FFF8DC;
+ 
+  overflow: hidden;
+}
+legend {
+  background-color: black;
+  color: white;
+  padding: 10px;
+border-style: double;
+}
+fieldset {
+  display: block;
+  margin-left: 2px;
+  margin-right: 2px;
+  padding-top: 3px;
+  padding-bottom: 2px;
+  padding-left: 3px;
+  padding-right: 3px;
+  border: 2px groove (internal value);
+width:300px;
+}
+</style>
+</head>
+<body>
+<ul>
+  <li><a class="active" href="https://powermin.gov.in/">Home</a></li>
+  <li><a href="#contact">Contact</a></li>
+  <li><a href="#about">About</a></li>
+</ul>
+<form>
+<fieldset>
+<legend>LOGIN DETAILS</legend>
+<div class="password">
+<label>USERNAME: </label>
+<input type="text" placeholder="Name"> 
+<br><br>
+<label>EMAIL: </label>
+<input type="mail" id="inputEmail" placeholder="Email">
+<br><br>
+<label>PASSWORD: </label>
+ <input type="password" id="inputPassword" placeholder="Password" required>
+<br><br>
+ </div>
+<input type="checkbox"> <b>Remember me</b>
+ <input type="submit" value="Sign in"class="btn"></button>
+ <input type="reset" value="Reset"class="btn"></button>
+</fieldset>
+</form>
+<fieldset>
+<legend>FAQ:</legend>
+<button class="accordion"><strong>1. What is the procedure of Billing?</strong></button>
+<div class="panel">
+<pre style="font-size:15px;"><p><i>After installation the billing section is supplied with data containing Meter Details, initial meter reading.
+As per the predetermined cyclic order the first bill is issued. The bills are issued monthly, bimonthly and quarterly 
+and for domestic, non-domestic, industrial, Agricultural consumers. The payment of bills is to be made as per the last 
+due date shown on the bill.</i>
+</p>
+</pre>
+</div>
+<button class="accordion"><strong>2. How to increase sanctioned load?</strong></button>
+<div class="panel">
+<pre style="font-size:15px;"><p><i>For increasing the sanctioned load the domestic, commercial and industrial (LT) consumers should apply to the concerned 
+sectional and sub-divisional incharge. The HT consumers should apply to the Executive Engineer / superintending Engineer. 
+After confirming the feasibility, the load is sanctioned and the intimation will be issued which includes additional 
+service Line charges, Security deposit etc.
+</i>
+</p>
+</pre>
+</div>
+<button class="accordion"><strong>3. How to check one’s consumption?</strong></button>
+<div class="panel">
+<pre style="font-size:15px;"><p><i>The consumption depends on the capacity of appliance and period for which it is in use.</i></p></pre>
+</div>
+<button class="accordion"><strong>4.How to ensure safety?</strong></button>
+<div class="panel">
+<pre style="font-size:15px;"><p>
+1. Consumer should install safety equipments like Earth leakage /Overload & short circuit Protection near point of supply.
+2. Healthy Earthing should be installed at your premises.
+3. ISI marked cables and equipments of proper capacity should be used for installation. 
+4. Wiring should be done through only licensed Electrical Contractors.
+5. Always use proper capacity fuse wire in main switches.
+6. For rectification of faults in your installations, call licensed electrical contractors only. 
+7. For any difficulty related to electricity supply, always contact concerned authorities at their Offices.
+8. Do not connects multiple equipments to a single point out lay to avoid excess loading. 
+9. Avoid loose connections and joints.
+10.Do not use bare wires for extending supply from one point other or from one premise. It is hazardous and causes accidents. 
+11.Do not meddle with live wires/points,it may cost Your Life
+</p></pre>
+</div>
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
+}
+</script>
+</fieldset>
+</body>
+</html>
